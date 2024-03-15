@@ -1,0 +1,6 @@
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:31:9:RI_SetRegisterGlobal	11
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:153:9:RI_SetRegisterMotor1	36
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:406:9:RI_GetRegisterGlobal	12
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:541:11:RI_GetRegisterMotor1	52
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:890:9:RI_GetIDSize	2
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/register_interface.c:925:16:RI_GetPtrReg	12

@@ -1,0 +1,15 @@
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:59:13:SixPwm_Init	4	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:112:13:PWMC_SetPhaseVoltage	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:497:13:SixPwm_ApplyNextStep	4	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:516:13:SixPwm_IsFastDemagUpdated	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:526:13:SixPwm_ResetOCPolarity	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:122:13:SixPwm_LoadNextStep	24	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:544:13:SixPwm_TurnOnLowSides	8	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:575:13:SixPwm_SwitchOnPWM	16	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:622:13:SixPwm_SetADCTriggerChannel	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:643:13:SixPwm_SwitchOffPWM	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:672:15:SixPwm_BRK_IRQHandler	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:685:16:SixPwm_FastDemagFlag	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:703:16:SixPwm_QuasiSynchFlag	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:721:13:SixPwm_UpdatePwmDemagCounter	0	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwmc_6pwm.c:732:13:SixPwm_DisablePwmDemagCounter	0	static

@@ -1,0 +1,7 @@
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:32:9:RI_SetRegisterGlobal	15
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:166:9:RI_SetRegisterMotor1	46
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:488:9:RI_GetRegisterGlobal	20
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:633:11:RI_GetRegisterMotor1	57
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:1037:9:RI_MovString	4
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:1063:9:RI_GetIDSize	2
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/register_interface.c:1098:16:RI_GetPtrReg	6

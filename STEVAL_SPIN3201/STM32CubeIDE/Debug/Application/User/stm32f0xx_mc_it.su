@@ -1,0 +1,8 @@
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:75:6:DMA1_Channel1_IRQHandler	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:98:6:TIM1_BRK_UP_TRG_COM_IRQHandler	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:134:6:DMA1_Channel4_5_IRQHandler	0	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:152:6:DMA1_Channel2_3_IRQHandler	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:161:6:USART1_IRQHandler	8	static,ignoring_inline_asm
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:202:6:HardFault_Handler	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:220:6:SysTick_Handler	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/Src/stm32f0xx_mc_it.c:264:6:EXTI0_1_IRQHandler	8	static

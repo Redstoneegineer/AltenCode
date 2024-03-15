@@ -1,0 +1,16 @@
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:976:13:R3_1_HFCurrentsCalibrationAB	16	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:1014:13:R3_1_HFCurrentsCalibrationC	12	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:81:13:R3_1_Init	24	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:157:13:R3_1_SetOffsetCalib	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:171:13:R3_1_GetOffsetCalib	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:295:13:R3_1_GetPhaseCurrents	20	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:454:13:R3_1_GetPhaseCurrents_OVM	20	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:927:17:R3_1_WriteTIMRegisters	0	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:766:17:R3_1_SetADCSampPointCalibration	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:791:17:R3_1_SetADCSampPointSectX	16	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:863:10:R3_1_SetADCSampPointSectX_OVM	24	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:1052:13:R3_1_TurnOnLowSides	0	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:1096:13:R3_1_SwitchOnPWM	16	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:1188:13:R3_1_SwitchOffPWM	8	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:186:13:R3_1_CurrentReadingCalibration	48	static
+C:/Users/Asus/.st_workbench/projects/STEVAL_SPIN3201/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/r3_f0xx_pwm_curr_fdbk.c:1254:8:R3_1_TIMx_UP_IRQHandler	28	static

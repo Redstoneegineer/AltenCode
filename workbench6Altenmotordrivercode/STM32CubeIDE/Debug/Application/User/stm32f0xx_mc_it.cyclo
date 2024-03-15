@@ -1,0 +1,8 @@
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:75:6:TIM1_BRK_UP_TRG_COM_IRQHandler	5
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:110:6:DMA1_Channel1_IRQHandler	3
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:134:6:TIM2_IRQHandler	3
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:146:6:DMA1_Channel2_3_IRQHandler	2
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:155:6:USART1_IRQHandler	5
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:196:6:HardFault_Handler	1
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:214:6:SysTick_Handler	3
+C:/Users/Asus/.st_workbench/projects/workbench6Altenmotordrivercode/Src/stm32f0xx_mc_it.c:258:6:EXTI0_1_IRQHandler	2

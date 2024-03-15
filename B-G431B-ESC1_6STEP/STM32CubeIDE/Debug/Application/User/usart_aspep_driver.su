@@ -1,0 +1,6 @@
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:43:6:UASPEP_INIT	12	static,ignoring_inline_asm
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:55:6:UASPEP_DAMCONFIG_TX	4	static,ignoring_inline_asm
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:91:6:UASPEP_DAMCONFIG_RX	12	static,ignoring_inline_asm
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:127:6:UASPEP_SEND_PACKET	8	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:153:6:UASPEP_RECEIVE_BUFFER	8	static
+C:/Users/Asus/.st_workbench/projects/B-G431B-ESC1_6STEP/Src/usart_aspep_driver.c:169:6:UASPEP_IDLE_ENABLE	0	static,ignoring_inline_asm
