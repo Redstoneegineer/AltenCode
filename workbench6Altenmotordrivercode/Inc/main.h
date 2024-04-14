@@ -69,12 +69,12 @@ void Error_Handler(void);
 #define M1_BEMF_V_GPIO_Port GPIOA
 #define M1_BEMF_W_Pin GPIO_PIN_2
 #define M1_BEMF_W_GPIO_Port GPIOA
-#define M1_CURRENT_REF_Pin GPIO_PIN_6
-#define M1_CURRENT_REF_GPIO_Port GPIOA
 #define M1_BEMF_DIVIDER_Pin GPIO_PIN_7
 #define M1_BEMF_DIVIDER_GPIO_Port GPIOA
 #define M1_BUS_VOLTAGE_Pin GPIO_PIN_1
 #define M1_BUS_VOLTAGE_GPIO_Port GPIOB
+#define M1_OCP_Pin GPIO_PIN_12
+#define M1_OCP_GPIO_Port GPIOB
 #define M1_PWM_UL_Pin GPIO_PIN_13
 #define M1_PWM_UL_GPIO_Port GPIOB
 #define M1_PWM_VL_Pin GPIO_PIN_14
@@ -89,8 +89,6 @@ void Error_Handler(void);
 #define M1_PWM_WH_GPIO_Port GPIOA
 #define OC_SEL_Pin GPIO_PIN_11
 #define OC_SEL_GPIO_Port GPIOA
-#define TIM1_ETR_Pin GPIO_PIN_12
-#define TIM1_ETR_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define OCTH_STBY2_Pin GPIO_PIN_6

@@ -54,7 +54,6 @@ Application/User/mc_api.o: \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h \
  ../../Inc/power_stage_parameters.h \
- ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h \
  ../../Inc/mc_configuration_registers.h \
  ../../Inc/regular_conversion_manager.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/r_divider_bus_voltage_sensor.h \
@@ -124,7 +123,6 @@ Application/User/mc_api.o: \
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h:
 ../../Inc/power_stage_parameters.h:
-../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h:
 ../../Inc/mc_configuration_registers.h:
 ../../Inc/regular_conversion_manager.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/r_divider_bus_voltage_sensor.h:

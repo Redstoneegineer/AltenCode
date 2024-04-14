@@ -226,11 +226,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c</locationURI>
 		</link>
 		<link>
-			<name>Middlewares/MotorControl/current_ref_ctrl.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Src/current_ref_ctrl.c</locationURI>
-		</link>
-		<link>
 			<name>Middlewares/MotorControl/f0xx_bemf_ADC_fdbk.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Src/f0xx_bemf_ADC_fdbk.c</locationURI>

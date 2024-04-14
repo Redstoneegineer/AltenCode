@@ -1,0 +1,6 @@
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:31:9:RI_SetRegisterGlobal	12	static
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:153:9:RI_SetRegisterMotor1	16	static
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:352:9:RI_GetRegisterGlobal	16	static
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:487:11:RI_GetRegisterMotor1	24	static
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:728:9:RI_GetIDSize	0	static
+C:/Users/Asus/.st_workbench/projects/TestBallRunningMotor/Src/register_interface.c:763:16:RI_GetPtrReg	0	static

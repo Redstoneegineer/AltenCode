@@ -43,10 +43,10 @@ const GlobalConfig_reg_t globalConfig_reg =
 
 static const ApplicationConfig_reg_t M1_ApplicationConfig_reg =
 {
-  .maxMechanicalSpeed = 9780,
+  .maxMechanicalSpeed = 15000,
   .maxReadableCurrent = M1_MAX_READABLE_CURRENT,
-  .nominalCurrent     = 10,
-  .nominalVoltage     = 11,
+  .nominalCurrent     = 1.2,
+  .nominalVoltage     = 12,
   .driveType          = DRIVE_TYPE_M1,
 };
 
@@ -54,11 +54,11 @@ static const ApplicationConfig_reg_t M1_ApplicationConfig_reg =
 static const MotorConfig_reg_t M1_MotorConfig_reg =
 {
   .polePairs  = 7,
-  .ratedFlux  = 0.9,
-  .rs         = 0.1,
-  .ls         = 0.00002*1.000,
-  .ld         = 0.00002,
-  .maxCurrent = 10,
+  .ratedFlux  = 0.4,
+  .rs         = 0.11,
+  .ls         = 0.000018*1.000,
+  .ld         = 0.000018,
+  .maxCurrent = 1.2,
   .name = "Bull Running BR2804-1700"
 };
 

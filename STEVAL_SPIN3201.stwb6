@@ -745,7 +745,7 @@
       },
       "powerSwitches_0": {
         "setting": {
-          "PWMFrequency": 13500,
+          "PWMFrequency": "Number.NaN",
           "chargeBootCapDuty": "Number.NaN",
           "chargeBootCapMs": "Number.NaN",
           "drivingTopology": ""
@@ -753,7 +753,7 @@
       },
       "speedSensingSel_0": {
         "mainSensorParams": {
-          "speedSensorMode": "pll"
+          "speedSensorMode": ""
         }
       },
       "driveManagement_0": {
@@ -851,15 +851,15 @@
         "description": "",
         "polePairs": "Number.NaN",
         "mmsType": "",
-        "rs": 0.1,
-        "ls": 0.02,
+        "rs": "Number.NaN",
+        "ls": "Number.NaN",
         "mmsLd_lq_ratio": "Number.NaN",
-        "maxCurrent": 10,
-        "maxDCVoltage": 11,
-        "BEmfConstant": 0.85,
-        "inertia": 1,
-        "friction": 0.18,
-        "maxRatedSpeed": 9780,
+        "maxCurrent": "Number.NaN",
+        "maxDCVoltage": "Number.NaN",
+        "BEmfConstant": "Number.NaN",
+        "inertia": "Number.NaN",
+        "friction": "Number.NaN",
+        "maxRatedSpeed": "Number.NaN",
         "hasHallSensor": false,
         "hallSensor": {
           "sensorsDisplacement": "Number.NaN",
@@ -869,7 +869,9 @@
         "quadratureEncoder": {
           "pulsesPerMechanicalRevolution": "Number.NaN",
           "hasIndexPin": false
-        }
+        },
+        "nominalCurrent": "Number.NaN",
+        "nominalDCVoltage": "Number.NaN"
       }
     }
   }

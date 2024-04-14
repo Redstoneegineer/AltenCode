@@ -76,7 +76,8 @@ static void MX_NVIC_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	MC_StartMotor1();
+	HAL_Delay(100000);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/

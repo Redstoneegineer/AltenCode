@@ -37,18 +37,16 @@
                                                        much the Vbus is attenuated
                                                        before being converted into
                                                        digital value */
-#define NOMINAL_BUS_VOLTAGE_V         11
+#define NOMINAL_BUS_VOLTAGE_V         12
 /******** Current reading parameters section ******/
 /*** Topology ***/
 #define UNDEF
 
-#define RSHUNT                        0.01
+#define RSHUNT                        0.010
 
 /*  ICSs gains in case of isolated current sensors,
         amplification gain for shunts based sensing */
-#define AMPLIFICATION_GAIN            6.6
-#define CURR_REF_DIVIDER              3.2  /*!< Divider of the current limiter threshold  */
-#define OCP_INT_REF                   250       /*!< Internal over-current protecion threshold (mV) */
+#define AMPLIFICATION_GAIN            5.18
 
 /************ Temperature sensing section ***************/
 /* V[V]=V0+dV/dT[V/Celsius]*(T-T0)[Celsius]*/

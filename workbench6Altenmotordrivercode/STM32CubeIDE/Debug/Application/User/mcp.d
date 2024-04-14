@@ -52,7 +52,6 @@ Application/User/mcp.o: \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Inc/f0xx_bemf_ADC_fdbk.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
- ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h \
  ../../Inc/mc_config.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h \
@@ -128,7 +127,6 @@ Application/User/mcp.o: \
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Inc/f0xx_bemf_ADC_fdbk.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
-../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h:
 ../../Inc/mc_config.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:

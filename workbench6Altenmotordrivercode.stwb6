@@ -949,15 +949,15 @@
         "description": "",
         "polePairs": "Number.NaN",
         "mmsType": "",
-        "rs": 0.1,
-        "ls": 0.02,
+        "rs": "Number.NaN",
+        "ls": "Number.NaN",
         "mmsLd_lq_ratio": "Number.NaN",
-        "maxCurrent": 10,
-        "maxDCVoltage": 11,
-        "BEmfConstant": 0.85,
-        "inertia": 0.542,
-        "friction": 0.182,
-        "maxRatedSpeed": 9740,
+        "maxCurrent": "Number.NaN",
+        "maxDCVoltage": "Number.NaN",
+        "BEmfConstant": "Number.NaN",
+        "inertia": "Number.NaN",
+        "friction": "Number.NaN",
+        "maxRatedSpeed": "Number.NaN",
         "hasHallSensor": false,
         "hallSensor": {
           "sensorsDisplacement": "Number.NaN",
@@ -990,15 +990,15 @@
           "targetSpeed": "Number.NaN",
           "KpKi": {
             "P": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
+              "num": 100,
+              "den": 4096
             },
             "I": {
-              "num": "Number.NaN",
-              "den": "Number.NaN"
+              "num": 10,
+              "den": 16384
             }
           },
-          "autoPI": true
+          "autoPI": false
         },
         "demag": {
           "runTime": "Number.NaN",
@@ -1018,7 +1018,7 @@
             "bemf": {
               "up": "Number.NaN",
               "down": "Number.NaN",
-              "adcTrigTimeDpp": 70
+              "adcTrigTimeDpp": "Number.NaN"
             },
             "bemfOn": {
               "up": "Number.NaN",
@@ -1061,22 +1061,22 @@
               {
                 "duration": "Number.NaN",
                 "speedTarget": "Number.NaN",
-                "currVoltTarget": 0.5
+                "currVoltTarget": "Number.NaN"
               },
               {
-                "duration": 1000,
+                "duration": 2000,
                 "speedTarget": 500,
-                "currVoltTarget": 0.5
+                "currVoltTarget": 3.5
               },
               {
-                "duration": 1000,
+                "duration": 20000,
                 "speedTarget": 500,
-                "currVoltTarget": 0.5
+                "currVoltTarget": 3.5
               },
               {
-                "duration": 0,
+                "duration": 4000,
                 "speedTarget": 500,
-                "currVoltTarget": 0.5
+                "currVoltTarget": 3.5
               },
               {
                 "duration": 0,
@@ -1084,7 +1084,7 @@
                 "currVoltTarget": 0.5
               }
             ],
-            "sensorlessStartingPhase": "Number.NaN",
+            "sensorlessStartingPhase": 4,
             "isDrivingModeVoltage": true
           },
           "startupExitCond": {
@@ -1096,12 +1096,17 @@
         }
       },
       "currentSensing_0": {
-        "mode": "CM",
+        "mode": "VM",
         "ocpData": {
-          "enable": false
-        },
-        "currentData": {
-          "CLComparatorThreshold": 250
+          "enable": true,
+          "ocpMode": "",
+          "ocp": {
+            "mode": "singleInput",
+            "digitalFilter": "Number.NaN",
+            "threshold": "Number.NaN",
+            "intRefMilliVolt": "Number.NaN",
+            "signalPolarity": ""
+          }
         }
       },
       "busVoltageSensing_0": {

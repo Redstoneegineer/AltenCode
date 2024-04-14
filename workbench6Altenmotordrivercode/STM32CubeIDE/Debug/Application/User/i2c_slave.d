@@ -52,7 +52,6 @@ Application/User/i2c_slave.o: ../Application/User/i2c_slave.c \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h \
  ../../Inc/power_stage_parameters.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h \
- ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h \
  ../../Inc/mc_interface.h ../../Inc/mc_type.h \
  ../../Inc/mc_configuration_registers.h \
  ../../Inc/regular_conversion_manager.h \
@@ -123,7 +122,6 @@ Application/User/i2c_slave.o: ../Application/User/i2c_slave.c \
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h:
 ../../Inc/power_stage_parameters.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h:
-../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h:
 ../../Inc/mc_interface.h:
 ../../Inc/mc_type.h:
 ../../Inc/mc_configuration_registers.h:

@@ -25,6 +25,7 @@
 #include "register_interface.h"
 #include "mc_api.h"
 #include "i2c_slave.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +50,6 @@ I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim16;
 
 /* USER CODE BEGIN PV */
 
@@ -62,7 +62,6 @@ static void MX_DMA_Init(void);
 static void MX_ADC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_TIM16_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
@@ -84,9 +83,9 @@ int i=0;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  uint16_t timer_val;
-  uint16_t raw;
-  char msg[10];
+ // uint16_t timer_val;
+ // uint16_t raw;
+ // char msg[10];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -111,7 +110,6 @@ int main(void)
   MX_ADC_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_TIM16_Init();
   MX_MotorControl_Init();
   MX_I2C1_Init();
 
@@ -123,7 +121,7 @@ int main(void)
   }
 
   // Start timer
-  HAL_TIM_Base_Start_IT(&htim2);
+ // HAL_TIM_Base_Start_IT(&htim2);
 
   // Get current time
   //timer_val = __HAL_TIM_GET_COUNTER(&htim2);
@@ -136,55 +134,17 @@ int main(void)
   //MC_ControlMode_t controlMode;
   RDivider_Handle_t Vbus;
   uint16_t VBUSav=0;
+  uint16_t speedRef =0;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //if(RxData[1]){
-		  MC_StartMotor1();
-	  //}
-	  MC_AcknowledgeFaultMotor1();
-	  MC_ProgramSpeedRampMotor1(10, 1000 );
-	  	MC_StartMotor1();
-
-
-	//  uint16_t regdataU16;
-	 // uint16_t readBackDataSize;
-	 // int16_t datasizeregdataU16 = 2;
-
-	  	//uint16_t regdataU16_2;
-	  		//  uint16_t readBackDataSize_2;
-	  		//  int16_t datasizeregdataU16_2 = 2;
-	  		//RI_GetRegisterMotor1(MC_REG_UNDERVOLTAGETHRESHOLD, TYPE_DATA_16BIT, &regdataU16_2, &readBackDataSize_2, datasizeregdataU16_2);
-
-
-	  		BusVoltageSensor_Handle_t *pHandle;
-	  		VBUSav = VBS_GetBusVoltage_d(pHandle);
-
-	  		MC_AcknowledgeFaultMotor1();
-	 	  Mstate =  MC_GetSTMStateMotor1();
-	 	  if(Mstate == IDLE){
-	 		 MC_ProgramSpeedRampMotor1(500, 5000 );
-	 		 		  //MC_AcknowledgeFaultMotor1();
-	 		 MC_StartMotor1();
-	 	  }
-	 	 bool motorrel = MC_GetSpeedSensorReliabilityMotor1();
-	 	 float getMecSpeed = MC_GetMecSpeedAverageMotor1();
-	 	 float finalSpeed = MC_GetLastRampFinalSpeedMotor1();
-	 	 controlMode = MCI_GetControlMode(pHandle);
-	 	 if(motorrel == false){
-	 		Vbus = BusVoltageSensor_M1;
-	 	 }
-	 	 uint16_t currentFaults = MC_GetCurrentFaultsMotor1();
-	 	 if (currentFaults != MC_NO_ERROR) {
-	 		MC_AcknowledgeFaultMotor1();
-	 		Vbus = BusVoltageSensor_M1;
-	 	 }
-	 	 else{
-	 		//MC_ProgramSpeedRampMotor1(10, 1000 );
-	 		MC_StopMotor1();
-	 	 }
+	  speedRef = MC_GetMecSpeedReferenceMotor1();
+	  SendBuffer[0] = 1;
+	  for (int i = 0; i < RxSIZE; i++) {
+	          RxData[i];
+	  }
 
   }
   /* USER CODE END 3 */
@@ -245,9 +205,6 @@ static void MX_NVIC_Init(void)
   /* DMA1_Channel1_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
-  /* DMA1_Channel2_3_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 3, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
   /* TIM2_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(TIM2_IRQn, 2, 0);
   HAL_NVIC_EnableIRQ(TIM2_IRQn);
@@ -390,7 +347,6 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 0 */
 
-  TIM_ClearInputConfigTypeDef sClearInputConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
   TIM_OC_InitTypeDef sConfigOC = {0};
   TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
@@ -406,23 +362,6 @@ static void MX_TIM1_Init(void)
   htim1.Init.RepetitionCounter = (REP_COUNTER);
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sClearInputConfig.ClearInputState = ENABLE;
-  sClearInputConfig.ClearInputSource = TIM_CLEARINPUTSOURCE_ETR;
-  sClearInputConfig.ClearInputPolarity = TIM_CLEARINPUTPOLARITY_NONINVERTED;
-  sClearInputConfig.ClearInputPrescaler = TIM_CLEARINPUTPRESCALER_DIV1;
-  sClearInputConfig.ClearInputFilter = 0;
-  if (HAL_TIM_ConfigOCrefClear(&htim1, &sClearInputConfig, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_ConfigOCrefClear(&htim1, &sClearInputConfig, TIM_CHANNEL_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_ConfigOCrefClear(&htim1, &sClearInputConfig, TIM_CHANNEL_3) != HAL_OK)
   {
     Error_Handler();
   }
@@ -459,8 +398,8 @@ static void MX_TIM1_Init(void)
   sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_ENABLE;
   sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
   sBreakDeadTimeConfig.DeadTime = ((DEAD_TIME_COUNTS) / 2);
-  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
-  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_LOW;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_ENABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
   sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
   if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
   {
@@ -519,68 +458,6 @@ static void MX_TIM2_Init(void)
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
-
-}
-
-/**
-  * @brief TIM16 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM16_Init(void)
-{
-
-  /* USER CODE BEGIN TIM16_Init 0 */
-
-  /* USER CODE END TIM16_Init 0 */
-
-  TIM_OC_InitTypeDef sConfigOC = {0};
-  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
-
-  /* USER CODE BEGIN TIM16_Init 1 */
-
-  /* USER CODE END TIM16_Init 1 */
-  htim16.Instance = TIM16;
-  htim16.Init.Prescaler = ((TIM_CLOCK_DIVIDER) - 1);
-  htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim16.Init.Period = PWM_PERIOD_CYCLES_REF;
-  htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim16.Init.RepetitionCounter = 0;
-  htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_Base_Init(&htim16) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_PWM_Init(&htim16) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
-  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
-  if (HAL_TIM_PWM_ConfigChannel(&htim16, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
-  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
-  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
-  sBreakDeadTimeConfig.DeadTime = 0;
-  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
-  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
-  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
-  if (HAL_TIMEx_ConfigBreakDeadTime(&htim16, &sBreakDeadTimeConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM16_Init 2 */
-
-  /* USER CODE END TIM16_Init 2 */
-  HAL_TIM_MspPostInit(&htim16);
 
 }
 

@@ -40,7 +40,6 @@
 "./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim.o"
 "./Drivers/STM32F0xx_HAL_Driver/stm32f0xx_hal_tim_ex.o"
 "./Middlewares/MotorControl/bus_voltage_sensor.o"
-"./Middlewares/MotorControl/current_ref_ctrl.o"
 "./Middlewares/MotorControl/f0xx_bemf_ADC_fdbk.o"
 "./Middlewares/MotorControl/ntc_temperature_sensor.o"
 "./Middlewares/MotorControl/pid_regulator.o"

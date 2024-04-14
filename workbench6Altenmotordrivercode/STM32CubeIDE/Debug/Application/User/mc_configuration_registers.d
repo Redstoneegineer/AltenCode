@@ -53,7 +53,6 @@ Application/User/mc_configuration_registers.o: \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Inc/f0xx_bemf_ADC_fdbk.h \
  ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
- ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h \
  ../../Inc/parameters_conversion.h ../../Inc/mc_math.h \
  ../../Inc/parameters_conversion_f0xx.h ../../Inc/pmsm_motor_parameters.h \
  ../../Inc/drive_parameters.h ../../Inc/power_stage_parameters.h
@@ -113,7 +112,6 @@ Application/User/mc_configuration_registers.o: \
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common_sixstep.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/F0xx/Inc/f0xx_bemf_ADC_fdbk.h:
 ../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
-../../MCSDK_v6.2.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/current_ref_ctrl.h:
 ../../Inc/parameters_conversion.h:
 ../../Inc/mc_math.h:
 ../../Inc/parameters_conversion_f0xx.h:
