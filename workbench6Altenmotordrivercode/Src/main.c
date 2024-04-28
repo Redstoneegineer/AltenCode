@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdlib.h>
 #include "register_interface.h"
 #include "mc_api.h"
 #include "i2c_slave.h"
@@ -120,32 +120,42 @@ int main(void)
   	Error_Handler();
   }
 
-  // Start timer
- // HAL_TIM_Base_Start_IT(&htim2);
-
-  // Get current time
-  //timer_val = __HAL_TIM_GET_COUNTER(&htim2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  MCI_State_t Mstate;
-  //MC_ControlMode_t controlMode;
-  RDivider_Handle_t Vbus;
-  uint16_t VBUSav=0;
-  uint16_t speedRef =0;
+  //This function calculates takes in the speed difference between the current and set speed and by multiplying it with the maximum acceleration return the duration
+  uint8_t CalcTimeSpeedRamp(uint8_t speedDiff){
+	  return abs(speedDiff) * 0.5; //TODO: waarde nog te bepalen van de hoek
+  }
+
+  uint16_t mecSpeedRef =0;
+  uint8_t speedValue =0;
+  uint8_t timeToSpeedUp =0;
+  bool is_motor_on = false;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  speedRef = MC_GetMecSpeedReferenceMotor1();
-	  SendBuffer[0] = 1;
-	  for (int i = 0; i < RxSIZE; i++) {
-	          RxData[i];
-	  }
+	  mecSpeedRef = MC_GetMecSpeedReferenceMotor1();
+	  speedValue = I2C_REGISTERS[0];
+	  if(speedValue < 1){ //The master will send a zero when to motor has to stop(0 rpm) TODO: waarde nog te bepalen wat de minimum aantal rpm is in closed loop
+		  if (is_motor_on) {
+			  MC_StopMotor1();
+			  is_motor_on = false;
+		  }
+	  } else { //When the value is higher than the minimum required rpm
+		  timeToSpeedUp = CalcTimeSpeedRamp(mecSpeedRef-speedValue);
+		  MC_ProgramSpeedRampMotor1(speedValue, timeToSpeedUp);
+		  if (!is_motor_on) {
+			  MC_StartMotor1();
+			  is_motor_on = true;
+		  }
 
+	  }
+	  SendBuffer[0] = mecSpeedRef;
   }
   /* USER CODE END 3 */
 }
